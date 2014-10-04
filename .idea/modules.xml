@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Yabs.iml" filepath="$PROJECT_DIR$/Yabs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/YabsBeaconEngine/YabsBeaconEngine.iml" filepath="$PROJECT_DIR$/YabsBeaconEngine/YabsBeaconEngine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/YabsCloudClient/YabsCloudClient.iml" filepath="$PROJECT_DIR$/YabsCloudClient/YabsCloudClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/YabsCommon/YabsCommon.iml" filepath="$PROJECT_DIR$/YabsCommon/YabsCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/YabsService/YabsService.iml" filepath="$PROJECT_DIR$/YabsService/YabsService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>
+
