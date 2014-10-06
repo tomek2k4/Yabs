@@ -81,6 +81,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="YabsCommon" exported="" />
     <orderEntry type="module" module-name="YabsCloudClient" exported="" />
+    <orderEntry type="module" module-name="YabsBeaconEngine" exported="" />
   </component>
 </module>
 

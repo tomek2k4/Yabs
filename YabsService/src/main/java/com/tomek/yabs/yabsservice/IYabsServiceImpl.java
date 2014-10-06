@@ -1,9 +1,12 @@
 package com.tomek.yabs.yabsservice;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.os.RemoteException;
 import android.util.Log;
 
+import com.tomek.yabs.yabsbeaconengine.BeaconEngineManager;
+import com.tomek.yabs.yabsbeaconengine.EstimoteBeaconEngineManager;
 import com.tomek.yabs.yabscloudclient.CloudClient;
 import com.tomek.yabs.yabscloudclient.CloudClientException;
 import com.tomek.yabs.yabscommon.IYabsService;
@@ -15,10 +18,14 @@ public class IYabsServiceImpl extends IYabsService.Stub{
 
     private static final String TAG = "YabsService";
 
+    private Context context;
+    private BeaconEngineManager beaconEngineManager;
 
-
-    public IYabsServiceImpl(){
+    public IYabsServiceImpl(Context context){
         Log.d(TAG,"Called constructor of IBeaconServiceImpl");
+        this.context = context;
+        beaconEngineManager = new EstimoteBeaconEngineManager(context);
+        beaconEngineManager.initialize();
     }
 
     @Override
@@ -32,6 +39,7 @@ public class IYabsServiceImpl extends IYabsService.Stub{
             return false;
         }
     }
+
 
     private class UpdateBeaconIdAsyncTask extends AsyncTask<Long,Void,String>{
 
@@ -62,4 +70,7 @@ public class IYabsServiceImpl extends IYabsService.Stub{
         return null;
     }
 
+    public void close() {
+        beaconEngineManager.close();
+    }
 }

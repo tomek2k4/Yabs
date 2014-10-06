@@ -22,6 +22,9 @@ public abstract class BeaconEngineManager {
     /** Current lte status. */
     private BeaconEngineStatus beaconEngineStatus;
 
+    public abstract boolean initialize();
+
+    public abstract void close();
 
     /**
      * Adds the beacon manager change listener.

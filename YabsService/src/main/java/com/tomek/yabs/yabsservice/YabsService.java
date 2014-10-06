@@ -17,7 +17,7 @@ public class YabsService extends Service {
     public void onCreate() {
         super.onCreate();
         Log.d(TAG, "Service on create called");
-        serviceImpl = new IYabsServiceImpl();
+        serviceImpl = new IYabsServiceImpl(getApplicationContext());
         Log.d(TAG,"Created IBeaconServiceImpl");
     }
 
@@ -30,6 +30,7 @@ public class YabsService extends Service {
     @Override
     public boolean onUnbind(Intent intent) {
         Log.d(TAG,"Service onUnbind called");
+        serviceImpl.close();
         return super.onUnbind(intent);
     }
 
