@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/YabsCloudClient" />
             <option value="$PROJECT_DIR$/YabsCommon" />
             <option value="$PROJECT_DIR$/YabsService" />
+            <option value="$PROJECT_DIR$/android-beacon-library" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

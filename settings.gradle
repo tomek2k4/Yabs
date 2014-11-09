@@ -1,1 +1,1 @@
-include ':app', ':YabsCloudClient', ':YabsCommon', ':YabsService', ':YabsBeaconEngine'
+include ':app', ':YabsCloudClient', ':YabsCommon', ':YabsService', ':YabsBeaconEngine', ':android-beacon-library'

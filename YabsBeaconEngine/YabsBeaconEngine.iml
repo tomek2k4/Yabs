@@ -83,6 +83,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="estimote-sdk-preview" level="project" />
     <orderEntry type="library" exported="" name="estimote-sdk-preview-javadoc" level="project" />
+    <orderEntry type="module" module-name="android-beacon-library" exported="" />
   </component>
 </module>
 
